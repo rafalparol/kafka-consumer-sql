@@ -1,0 +1,7 @@
+main:
+  config:
+    kafka:
+      topic: anomalies
+      offsets: earliest
+      consumerGroupId: consumer-sql-1
+      bootstrapAddress: 172.18.0.1:32772
