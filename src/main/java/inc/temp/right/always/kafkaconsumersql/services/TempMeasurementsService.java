@@ -15,4 +15,8 @@ public class TempMeasurementsService {
     public TempMeasurement save (TempMeasurement tempMeasurement) {
         return tempMeasurementsRepository.save(tempMeasurement);
     }
+
+    public void setTempMeasurementsRepository(TempMeasurementsRepository tempMeasurementsRepository) {
+        this.tempMeasurementsRepository = tempMeasurementsRepository;
+    }
 }

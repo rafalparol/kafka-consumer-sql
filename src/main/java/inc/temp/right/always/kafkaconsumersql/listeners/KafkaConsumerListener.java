@@ -20,4 +20,8 @@ public class KafkaConsumerListener {
        log.info(String.format("Message received: %s", temperatureMeasurement));
        tempMeasurementsService.save(temperatureMeasurement.toTempMeasurement());
     }
+
+    public void setTempMeasurementsService(TempMeasurementsService tempMeasurementsService) {
+        this.tempMeasurementsService = tempMeasurementsService;
+    }
 }
